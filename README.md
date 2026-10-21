@@ -1,40 +1,39 @@
-# titanic-datacleaning
-Data cleaning, preprocessing, and exploratory data analysis (EDA) of the Titanic dataset using Python, Pandas, Matplotlib, and Seaborn.
-
 # Titanic Dataset - Data Cleaning & Exploratory Data Analysis (EDA)
 
 ## 📌 Project Overview
-The objective of this project is to clean, transform, and analyze the raw Titanic passenger dataset using Python. Real-world datasets often contain missing values, inconsistent formats, and unneeded columns. By applying structured data preprocessing techniques, this project produces a clean, reliable dataset to analyze key demographic factors influencing passenger survival rates.
+This project performs data cleaning, preprocessing, and exploratory data analysis (EDA) on the Titanic passenger dataset using Python. Real-world datasets often contain missing values, unneeded columns, and inconsistent formats. By applying data preprocessing techniques, this project produces a clean, structured dataset and visualizes key demographic factors influencing passenger survival.
 
 ---
 
-## 🛠️ Dataset Use Case & Data Cleaning Steps
+## 🛠️ Data Cleaning & Preprocessing Steps
 1. **Handling Missing Values:**
-   - Imputed missing values in `Age` using the median strategy to preserve central tendency.
+   - Imputed missing values in `Age` using the median strategy.
    - Filled missing entries in `Embarked` using the mode (`'S'`).
    - Dropped the `Cabin` column due to an excessively high missing rate (>75%).
-2. **Removing Redundant Data:**
-   - Removed identifier features (`PassengerId`, `Name`, `Ticket`) that do not contribute to numerical trend analysis.
+2. **Removing Redundant Identifiers:**
+   - Removed identifier columns (`PassengerId`, `Name`, `Ticket`) that do not contribute to demographic analysis.
 3. **Encoding Categorical Features:**
-   - Converted the binary categorical feature `Sex` (`female` -> `1`, `male` -> `0`).
-4. **Data Export:**
-   - Exported the structured output to `cleaned_titanic.csv`.
+   - Converted binary categorical feature `Sex` into numerical values (`female` -> `1`, `male` -> `0`).
+4. **Exporting Clean Data:**
+   - Exported the structured, cleaned dataset to `cleaned_titanic.csv`.
 
 ---
 
-## 📊 Key Visualizations & Expected Outcomes
-- **Survival Rate by Passenger Class (Bar Chart):** Visualizes how passenger ticket class (`1`, `2`, `3`) directly correlated with survival probability, showing that higher-class passengers had a significantly higher survival rate.
-- **Age Distribution by Survival (Histogram / KDE Plot):** Examines age-based survival trends across demographic groups, highlighting that young children were prioritized during rescue efforts.
+## 📊 Visualizations & Key Insights
+- **Survival Rate by Passenger Class (Bar Chart):** Demonstrates that first-class passengers had a significantly higher survival rate compared to lower ticket classes.
+- **Age Distribution by Survival (Histogram):** Highlights how passenger age influenced survival probabilities, showing priority given to young children during rescue efforts.
 
 ---
 
-## 💻 Python Libraries & Tools
-- **Pandas:** Data manipulation, handling missing values, and filtering.
-- **NumPy:** Numerical operations and array calculations.
-- **Matplotlib & Seaborn:** Data visualization and plot styling.
-- **Google Colab:** Cloud Python execution environment.
-- **Git & GitHub:** Version control and submission management.
+## 💻 Tech Stack & Tools
+- **Language:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
+- **Environment:** Google Colab
+- **Version Control:** Git, GitHub
 
 ---
 
-## 📁 Repository Structure
+## 👥 Authors / Team Members
+- **Khwahish Jain (IU2441230660)**
+- **Rajlaxmi Mishra (IU2441230684)**
+- **Institute:** Indus University (B.Tech CSE)
